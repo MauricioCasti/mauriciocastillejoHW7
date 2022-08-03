@@ -7,6 +7,16 @@
 
 /* Global styles 
 ------------------------------------*/
+
+/* box boarder fix */
+html{
+    box-sizing: border-box;
+}
+
+*,*:before,*:after{
+    box-sizing: inherit;
+}
+
 body {
     background: lightblue;
     margin: 0;
@@ -16,15 +26,62 @@ h1,h2,h3,h4{
     font-family: 'Raleway', sans-serif;
 
 }
+
+header h1{
+    margin: 0;
+}
+
+header h2{
+    margin: 0;
+    margin-top: 0;
+    font-weight: 700;
+}
+
+p, li, a{
+    font-family: 'Raleway', sans-serif,'Times New Roman', Times, serif;
+    font-weight:bold;
+}
 .content-wrap{
     max-width: 950px;
     margin: 0 auto;
     padding: 50px;
+    overflow: hidden;
 }
 
+.profile-img{
+    width: 300px;
+    /* float: left; */
+    /* margin-right: 3px; */
+    border-radius: 50%;
+}
 
+/* for some reason the alignment would not work unless the percentages were a 40:60 ratio, so i decided to  create a separate column narrow for only the header*/
+.column-narrow-header{
+    width: 40%;
+    float: left;
+    padding-right: 3%;
+    min-height: 175px;
+}
 
+/* for some reason the alignment would not work unless the percentages were a 60:40 ratio, so i decided to  create a separate column wide for only the header*/
+.column-wide-header{
+    width: 60%;
+    float: left;
+    min-height: 225px;
+}
 
+.column-narrow{
+    width: 30%;
+    float: left;
+    padding-right: 3%;
+    min-height: 175px;
+}
+
+.column-wide{
+    width: 70%;
+    float: left;
+    min-height: 225px;
+}
 
 
 /* Header 
