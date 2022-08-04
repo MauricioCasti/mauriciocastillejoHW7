@@ -49,7 +49,7 @@ In this hw, you’ll continue working on your resume site. You can continue buli
 5. Add the box model fix -done
             a. Let's add the box model fix. Use the snippet from the lecture and add it to your CSS file. This is going to go at the very top of your style sheet. Add it to the global section since this style is applied to every single element on the page.
 
-6. Add some columns to your page
+6. Add some columns to your page -done
             a. The first step is to put a box around all of the text elements to group them as one component. Let's go back to the HTML file. We'll use a div tag to create the container because this is only for styling purposes. And we'll add a class as well. We're going to be creating two columns, so we can call it column-narrow and column-wide. You'll be using these column styles again to align the content in the work experience section. So this is going to be a reusable style.
             
             b. In the HTML add a class of column-narrow to your img tag.
